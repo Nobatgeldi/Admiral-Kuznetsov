@@ -1,0 +1,29 @@
+﻿LANGUAGE, English, Russian
+
+STR_ULYANOVSK_NAME1, "CVN 'Ulyanovsk'","C-107 АК 'Ульяновск'"
+
+STR_ULYANOVSK_LC, "<t color='#0000ff'>Load Cargo</t>","<t color='#0000ff'>Закрепить технику</t>"
+STR_ULYANOVSK_UC, "<t color='#00ff00'>Unload Cargo</t>","<t color='#00ff00'>Открепить технику</t>"
+STR_ULYANOVSK_IND, "<t color='#000000'>Get in CVN as driver</t>","<t color='#000000'>Войти в АНК как водитель</t>"
+STR_ULYANOVSK_ING, "<t color='#000000'>Get in CVN as gunner</t>","<t color='#000000'>Войти в АНК как стрелок</t>"
+STR_ULYANOVSK_C1, "<t color='#000088'>Launch from 1st catapult</t>","<t color='#000088'>Запуск с 1-й катапульты</t>"
+STR_ULYANOVSK_C2, "<t color='#000088'>Launch from 2st catapult</t>","<t color='#000088'>Запуск с 2-й катапульты</t>"
+STR_ULYANOVSK_C3, "<t color='#000088'>Launch from 3st catapult</t>","<t color='#000088'>Запуск с 3-й катапульты</t>"
+STR_ULYANOVSK_C4, "<t color='#000088'>Launch from 4st catapult</t>","<t color='#000088'>Запуск с 4-й катапульты</t>"
+STR_ULYANOVSK_LF, "Launch aborted: Bad angle!","Запуск невозможен: неправильный угол!"
+
+STR_ULYANOVSK_T1, "SS-N-19, Turret 1","ПКРК «Гранит», Турель 1"
+STR_ULYANOVSK_T2, "SS-N-19, Turret 2","ПКРК «Гранит», Турель 2"
+STR_ULYANOVSK_T3, "SS-N-19, Turret 3","ПКРК «Гранит», Турель 3"
+STR_ULYANOVSK_T4, "SS-N-19, Turret 4","ПКРК «Гранит», Турель 4"
+STR_ULYANOVSK_T5, "SS-N-19, Turret 5","ПКРК «Гранит», Турель 5"
+STR_ULYANOVSK_T6, "SS-N-19, Turret 6","ПКРК «Гранит», Турель 6"
+STR_ULYANOVSK_T7, "SS-N-19, Turret 7","ПКРК «Гранит», Турель 7"
+STR_ULYANOVSK_T8, "SS-N-19, Turret 8","ПКРК «Гранит», Турель 8"
+
+STR_ULYANOVSK_PKRK, "SS-N-19 Shipwreck","ПКРК «Гранит»"
+STR_ULYANOVSK_AK630, "AK-630","АК-630"
+STR_ULYANOVSK_KOU, "Guns Commander","Командир огневых установок"
+STR_ULYANOVSK_SG, "Second Gunner","Второй Стрелок"
+
+STR_ULYANOVSK_DESCR, "Ulyanovsk (Cyrillic: Улья́новск) was the first of a class of never-completed Soviet nuclear-powered supercarriers which for the first time would have offered true blue water aviation capability for the Soviet Navy. This was based upon the 1975 Project 1153 OREL (which never went beyond blueprints). The initial commissioned name was to be Kremlin, but was later given the name Ulyanovsk after the Soviet town of Ulyanovsk, which was originally named Simbirsk but later renamed after Vladimir Lenin's original name because he was born there.","«Ульяновск» (заказ С-107) — советский тяжёлый авианесущий крейсер с атомной энергетической установкой (АТАКР), корабль проекта 1143.7. Разработка тяжёлого авианесущего крейсера проекта 1143.7 «Ульяновск», который должен был стать флагманом ВМФ, началась в Невском проектно-конструкторском бюро в 1984 году под руководством Л. В. Белова (позже его сменил Ю. М. Варфоломеев). При проектировании учитывался опыт разработки проекта 1160. «Ульяновск» планировался как первый из четырёх однотипных кораблей. 4 октября 1988 года головной «Ульяновск» (заводской № 107) был включён в списки кораблей ВМФ и 25 ноября заложен на стапеле Черноморского судостроительного завода № 444 в Николаеве"
