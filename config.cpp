@@ -622,6 +622,7 @@ class CfgVehicles
 				displayName = "$STR_ULYANOVSK_UC";
 				position="dor";
 				radius = 350.0;
+				//condition = "(vehicle player != vehicle this) and (vehicle player != player) AND Alive(this)";
 				condition = "(speed (vehicle player) < 5) and !(player in this) and ((vehicle player)!=(this)) AND ((vehicle player)!=(player))";
 				statement = "[this, vehicle player, player] execVM ""\ulyanovsk\scr\detach.sqf""";
 			};
@@ -711,6 +712,11 @@ class CfgVehicles
 	class ff_roadway : forward_roadway
 	{
 		model="\ulyanovsk\ff_roadway.p3d";
+	};
+
+	class midlle_rooad : forward_roadway
+	{
+		model="\ulyanovsk\midlle_rooad.p3d";
 	};
 
 	class back_roadway : forward_roadway
