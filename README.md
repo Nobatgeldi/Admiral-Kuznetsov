@@ -16,10 +16,8 @@ Aircraft carried:	Approx. 50 aircraft and 18 helicopter
 | 	Kamov Ka-27PS   |          2        |
 #
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K6922R75JMFTS)
-#
-[Download](https://github.com/Nobatgeldi/Admiral-Kuznetsov/zip/master)
 #Picture
-![GitHub Logo](https://raw.githubusercontent.com/Nobatgeldi/Aircraft-carrier/master/pic/6.jpg)
+![GitHub Logo](https://raw.githubusercontent.com/Nobatgeldi/Aircraft-carrier/master/pic/0.jpg)
 #
 ![GitHub Logo](https://raw.githubusercontent.com/Nobatgeldi/Aircraft-carrier/master/pic/1.jpg)
 #
