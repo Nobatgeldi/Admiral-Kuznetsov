@@ -1,6 +1,6 @@
 # Aircraft carrier Ulyanovsk mod for ArmA 3
 #
-AUlyanovsk (Russian: Улья́новск;) was begun as the first of a class of Soviet nuclear-powered supercarriers but was abandoned before completion intended for the first time to offer true blue water aviation capability for the Soviet Navy.
+Ulyanovsk (Russian: Улья́новск;) was begun as the first of a class of Soviet nuclear-powered supercarriers but was abandoned before completion intended for the first time to offer true blue water aviation capability for the Soviet Navy.
 #
 Aircraft carried:	Approx. 50 aircraft and 18 helicopter
 #
