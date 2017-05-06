@@ -12,15 +12,11 @@ _bkrw1_position = _vehicle selectionPosition "broadway";
 _bkrw2_position = _vehicle selectionPosition "broadway2";
 _midll_position = _vehicle selectionPosition "mroadway";
 
-
-
 _fwrw1 = "forward_roadway" createVehicle _fwrw1_position;
 _fwrw2 = "ff_roadway" createVehicle _fwrw2_position;
 _bkrw1 = "back_roadway" createVehicle _bkrw1_position;
 _bkrw2 = "bb_roadway" createVehicle _bkrw2_position;
 _midll = "midlle_rooad" createVehicle _midll_position;
-
-
 
   _fwrw1 attachTo [_vehicle,[0.0,0.0,0.0],"froadway"];
   _fwrw2 attachTo [_vehicle,[0.0,0.0,0.0],"froadway2"];
@@ -41,14 +37,14 @@ _midll = "midlle_rooad" createVehicle _midll_position;
   cpult4 attachTo [_plane,[0.0,0.0,0.0],"catapult4"];
   */
 
-  _trt1 = "granit_turret1" createvehicle(_vehicle selectionposition "turret1");
-  _trt2 = "granit_turret2" createvehicle(_vehicle selectionposition "turret2");
-  _trt3 = "granit_turret3" createvehicle(_vehicle selectionposition "turret3");
-  _trt4 = "granit_turret4" createvehicle(_vehicle selectionposition "turret4");
-  _trt5 = "granit_turret5" createvehicle(_vehicle selectionposition "turret5");
-  _trt6 = "granit_turret6" createvehicle(_vehicle selectionposition "turret6");
-  _trt7 = "granit_turret7" createvehicle(_vehicle selectionposition "turret7");
-  _trt8 = "granit_turret8" createvehicle(_vehicle selectionposition "turret8");
+  _trt1 = "granit_turret1" createVehicle(_vehicle selectionPosition "turret1");
+  _trt2 = "granit_turret2" createVehicle(_vehicle selectionPosition "turret2");
+  _trt3 = "granit_turret3" createVehicle(_vehicle selectionPosition "turret3");
+  _trt4 = "granit_turret4" createVehicle(_vehicle selectionPosition "turret4");
+  _trt5 = "granit_turret5" createVehicle(_vehicle selectionPosition "turret5");
+  _trt6 = "granit_turret6" createVehicle(_vehicle selectionPosition "turret6");
+  _trt7 = "granit_turret7" createVehicle(_vehicle selectionPosition "turret7");
+  _trt8 = "granit_turret8" createVehicle(_vehicle selectionPosition "turret8");
 
   _trt1 attachTo [_vehicle,[0.0,0.0,0.0],"turret1"];
   _trt2 attachTo [_vehicle,[0.0,0.0,0.0],"turret2"];

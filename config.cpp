@@ -29,235 +29,6 @@ class CfgPatches
 };
 
 class MissileCrater;
-/*
-class CfgAmmo
-{
-	class M_R73_AA;
-
-	class Granit : M_R73_AA
-	{
-		model="\ulyanovsk\Granit.p3d";
-		proxyshape="\ulyanovsk\Granit.p3d";
-		hit = 500;
-		indirectHit = 70;
-		indirectHitRange = 21;
-		maneuvrability = 99;
-		sideAirFriction = 1;
-		simulationStep = 0.002;
-		trackOversteer = 30;
-		trackLead = 0.6;
-		airLock = true;
-		irLock = true;
-		cost = 50000;
-		maxSpeed = 2500;	// max speed on level road, km/h
-		initTime = 0;
-		thrustTime = 55;
-		thrust = 285;
-		fuseDistance = 300;
-		maxControlRange = 10000;	// max range for manual control, 0 = no control (passive weapon)
-		timeToLive = 65;
-		whistleDist = 42;
-		visibleFireTime = 5000;	// how long is it visible
-		CraterEffects = "MissileCrater";
-		explosionEffects = "ExplosionEffects";
-	};
-	class BulletBase;	// External class reference
-	class ak630_Bullet: BulletBase
-	{
-		airLock = true;
-		irLock = true;
-		hit=137;
-		indirectHit=10;
-		explosive=1;
-		tracerColor[] ={0,0,0,0};
-		tracerColorR[] = {0,0,0,0};
-	};
-	class ak630_BulletTracer: ak630_Bullet
-	{
-		tracerColor[] ={0,1,0,.5};
-		tracerColorR[] = {0,1,0,.5};
-	};
-};
-
-class CfgMagazines
-{
-	class Default;	// External class reference
-
-	class CA_Magazine : Default {};
-
-	class VehicleMagazine : CA_Magazine {};
-	class 8Rnd_9M311;
-	class 5Rnd_AT5_BRDM2;
-
-	class Granit_rail : 8Rnd_9M311
-	{
-		displayName = "$STR_ULYANOVSK_PKRK";
-		ammo = "Granit";
-		count = 256;
-		initSpeed = 300;
-		maxLeadSpeed = 1000;	// max estimated speed km/h
-	};
-	class 2000Rnd_23mm_AZP85;	// External class reference
-	class ak630_Gun: VehicleMagazine
-	{
-		scope = public;
-		displayName="$STR_ULYANOVSK_AK630";
-		ammo="ak630_Bullet";
-		count=10000;
-		flashSize=0.001;
-		initSpeed=2000;
-		maxLeadSpeed=1800;
-		modes[] ={normal,tracer};
-		class normal
-		{
-			multiplier=1;
-			burst=1;
-			soundBurst = 0;
-			autofire=true;
-			dispersion=0.02;
-			ammo = ak630_Bullet;
-			reloadTime=0.1;
-			displayName="AK630";
-			ffCount=3000;
-			sound[]={"\ulyanovsk\Ak_630.wav",db+1,1};
-			soundContinuous=false;
-			recoil = Empty;
-			aiRateOfFire=0.05;
-			aiRateOfFireDistance=2000;
-			useAction=false;
-			useActionTitle="";
-		};
-		class tracer
-		{
-			multiplier =1;
-			burst=1;
-			soundBurst = 0;
-			autofire=true;
-			dispersion=0.02;
-			ammo = ak630_BulletTracer;
-			reloadTime=0.1;
-			displayName="AK630 tracer";
-			ffCount=3000;
-			sound[]={"\ulyanovsk\Ak_630expl.wav",db+1,1};
-			soundContinuous=false;
-			recoil = Empty;
-			aiRateOfFire=0.05;
-			aiRateOfFireDistance=2000;
-			useAction=false;
-			useActionTitle="";
-		};
-	};
-};
-
-class cfgWeapons
-{
-	class LauncherCore;	// External class reference
-
-	class MissileLauncher : LauncherCore {};
-
-	class 9M311Laucher;
-	class AT5Launcher;
-
-	class Granit_rail : 9M311Laucher
-	{
-		magazines[] = {"Granit_rail"};
-		displayName = "$STR_ULYANOVSK_PKRK";
-		nameSound = "aalauncher";
-		reloadTime = 0.2;
-		magazineReloadTime = 30;
-		minRange = 20;
-		minRangeProbab = 0.1;
-		midRange = 3000;
-		midRangeProbab = 0.7;
-		maxRange = 6000;
-		maxRangeProbab = 0.2;
-		aiRateOfFire = 4;	// delay between shots at given distance
-		aiRateOfFireDistance = 5000;
-		//autoFire = true;
-	};
-	class CannonCore;	// External class reference
-	class AZP85;	// External class reference
-	class ak630_Gun: CannonCore
-	{
-		scope = public;
-		displayName="$STR_ULYANOVSK_AK630";
-		ammo=ak630_Bullet;
-		flashSize=0.001;
-		initSpeed=2000;
-		maxLeadSpeed=1800;
-		modes[] ={normal,tracer};
-		magazines[] = {ak630_Gun};
-		class normal
-		{
-			begin1[] = {"ulyanovsk\mg51.wav", 1.77828, 1, 1000};
-			begin2[] = {"ulyanovsk\mg51.wav", 1.77828, 1, 1000};
-			soundBegin[] = {"begin1", 0.5, "begin2", 0.5};
-			recoilprone = "Empty";
-			multiplier=1;
-			burst=1;
-			autofire=true;
-			dispersion=0.02;
-			ammo = ak630_Bullet;
-			reloadTime=0.1;
-			displayName="AK630";
-			ffCount=300;
-			sound[]={"weapons\m2-50-loop",db20,1};
-			soundContinuous=false;
-			showtoplayer = true;
-			soundBurst = 0;
-			recoil = Empty;
-			aiRateOfFire=0.05;
-			aiRateOfFireDistance=2000;
-			useAction=false;
-			useActionTitle="";
-			minRange=1;minRangeProbab=0.10;
-			midRange=1400;midRangeProbab=0.58;
-			maxRange=3000;maxRangeProbab=0.04;
-			maxLeadSpeed = 2000;
-			artilleryDispersion = 0;
-			artilleryCharge = 0;
-			textureType="";
-			soundBeginWater[]={}; // all three sounds have roughly the same probablity
-			soundClosure[]={};
- 			weaponSoundEffect  = "DefaultRifle";
-		};
-		class tracer
-		{
-			begin1[] = {"ulyanovsk\mg51.wav", 1.77828, 1, 1000};
-			begin2[] = {"ulyanovsk\mg51.wav", 1.77828, 1, 1000};
-			soundBurst = 0;
-			soundBegin[] = {"begin1", 0.5, "begin2", 0.5};
-			recoilprone = "Empty";
-			multiplier =1;
-			burst=1;
-			autofire=true;
-			showtoplayer = true;
-			dispersion=0.02;
-			ammo = ak630_BulletTracer;
-			reloadTime=0.1;
-			displayName="AK630 tracer";
-			ffCount=300;
-			sound[]={"weapons\m2-50-loop",db20,1};
-			soundContinuous=false;
-			recoil = Empty;
-			aiRateOfFire=0.05;
-			aiRateOfFireDistance=2000;
-			useAction=false;
-			useActionTitle="";
-			minRange=1;minRangeProbab=0.10;
-			midRange=1400;midRangeProbab=0.58;
-			maxRange=3000;maxRangeProbab=0.04;
-			maxLeadSpeed = 2000;
-			artilleryDispersion = 0;
-			artilleryCharge = 0;
-			textureType="";
-			soundBeginWater[]={}; // all three sounds have roughly the same probablity
-			soundClosure[]={};
- 			weaponSoundEffect  = "DefaultRifle";
-		};
-	};
-};
-*/
 class CfgNonAIVehicles
 {
 	class ProxyFlag;	// External class reference
@@ -336,11 +107,14 @@ class CfgVehicles
 		driverAction="driver_mid01";
 		gunnerAction="mbt2_slot2b_in";
 		commanderAction="driver_mid01";
-		cargoAction[]={"O_crew_F"};
+		cargoAction[]=
+		{
+		  "O_crew_F"
+		};
 		mapSize = 250;
 		extCameraPosition[]={0,37,-230};		// 0,5,-30 is standard Air class
 		canFloat = 1;
-		fuelCapacity = 2000;
+		fuelCapacity = 200000;
 		cost = 2000000;
 		accuracy = 0.9;
 		irScanRange = 5000;
@@ -349,7 +123,7 @@ class CfgVehicles
 		laserScanner = true;
 		nightVision = true;
 		getInRadius=20;
-		transportSoldier = 0;
+		transportSoldier = 50;
 		//hideProxyInCombat=1;
 
 		memoryPointsGetInCargo = "pos cargo";
@@ -374,8 +148,14 @@ class CfgVehicles
 		driverIsCommander = true;
 		gunnerCanSee="1+16+4+8";
 
-		weapons[]={};
-		magazines[]={};
+		weapons[]=
+		{
+
+		};
+		magazines[]=
+		{
+
+		};
 
 		armor = 6000;
 		//armorStructural=2.000000;
@@ -438,9 +218,9 @@ class CfgVehicles
 		class EventHandlers
         {
             init = "[_this select 0] exec ""\ulyanovsk\scr\tips.sqs""";
-						engine = "[_this select 0] execVM ""\ulyanovsk\scr\small_radar.sqf"";[_this select 0] execVM ""\ulyanovsk\scr\big_radar.sqf""";
+			engine = "[_this select 0] execVM ""\ulyanovsk\scr\small_radar.sqf"";[_this select 0] execVM ""\ulyanovsk\scr\big_radar.sqf""";
             fired = "_this call BIS_Effects_EH_Fired;";
-						killed = "_this call BIS_Effects_EH_Killed;";
+			killed = "_this call BIS_Effects_EH_Killed;";
         };
 
 		class Reflectors

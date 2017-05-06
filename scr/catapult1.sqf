@@ -25,20 +25,23 @@ else
 	sleep(2);	
 	while {(alive _plane) and ((speed _plane)< 300)} do 
 	{
-		if (isengineon _plane) then 
+		if (isEngineOn _plane) then
 		{
 			if (_Intensity < _MaxIntensity) then 
 			{
-				_Intensity = _Intensity + 0.1*(15*_looptime)
-			};
+				_Intensity = _Intensity + 0.1*(15*_looptime);
+			}
 			if ((speed _plane) < _maxspeed) then 
 			{
-				_plane setVelocity [(velocity _plane select 0)+((vectordir _plane) select 0)*((_Boost*_Intensity/2)*(15*_looptime)),(velocity _plane select 1)+((vectordir _plane) select 1)*((_Boost*_Intensity/2)*(15*_looptime)),(velocity _plane select 2)+((vectordir _plane) select 2)*((_Boost*_Intensity/2)*(10*_looptime))]
+				_plane setVelocity [(velocity _plane select 0)+((vectorDir _plane) select 0)*((_Boost*_Intensity/2)*(15*_looptime)),(velocity _plane select 1)+((vectorDir _plane) select 1)*((_Boost*_Intensity/2)*(15*_looptime)),(velocity _plane select 2)+((vectorDir _plane) select 2)*((_Boost*_Intensity/2)*(10*_looptime))];
 			};
 		} 
 		else 
 		{
-			if (_Intensity > 0) then {_Intensity = _Intensity - 0.2*(15*_looptime)}
+			if (_Intensity > 0) then
+			{
+			    _Intensity = _Intensity - 0.2*(15*_looptime);
+			}
 		};
 		_looptime = time;
 		sleep 0.05; // mod by Crowe
