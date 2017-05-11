@@ -29,4 +29,6 @@ Aircraft carried:	Approx. 50 aircraft and 18 helicopter
 #
 ![GitHub Logo](https://raw.githubusercontent.com/Nobatgeldi/Aircraft-carrier/master/pic/5.jpg)
 #
+Arma 3 game is created by and owned Bohemia Interactive. Aircraft Carrier mod was created by Nobatgeldi Geldimammedov. Mod Creator and it's author aren't affiliated with Bohemia Interactive. This project is licensed under the MIT License. You don't need to contact me if you want to create derivatives or publish the project elsewhere.
+#
 Contact nobatgeldi@outlook.com.tr
