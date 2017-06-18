@@ -35,13 +35,13 @@ class CfgNonAIVehicles
 
 	class ProxyFlag_vmf : ProxyFlag
 	{
-		model = "\ulyanovsk\flag_vmf";
+		model = "\ulyanovsk\models\flag_vmf";
 	};
 
 	class ProxyWeapon;
 	class ProxyGranit : ProxyWeapon
 	{
-		model ="\ulyanovsk\Granit";
+		model ="\ulyanovsk\models\Granit";
 		simulation ="maverickweapon";
 	};
 };
@@ -97,7 +97,7 @@ class CfgVehicles
 		displayName = "Ulyanovsk";
 		picture = "\ulyanovsk\icons\picture.paa";
 		icon = "\ulyanovsk\icons\icon.paa";
-		model = "\ulyanovsk\ulyanovsk.p3d";
+		model = "\ulyanovsk\models\ulyanovsk.p3d";
 		soundEngine[]={"\ulyanovsk\sound\Underway.wav",4,1.2};
 		soundEnviron[]={"Objects\noise",db-60,1.0};			// Cessna
 		side = 0;
@@ -116,6 +116,7 @@ class CfgVehicles
 		canFloat = 1;
 		fuelCapacity = 200000;
 		cost = 2000000;
+		simulation="ship";
 		accuracy = 0.9;
 		irScanRange = 5000;
 	    irTarget = true ;
@@ -477,12 +478,13 @@ class CfgVehicles
 	class forward_roadway : Ship
 	{
 		scope=1;
-		model="\ulyanovsk\forward_roadway.p3d";
+		model="\ulyanovsk\models\forward_roadway.p3d";
 		displayname="test";
 		side=0;
+		//simulation="ship";
 		faction = "OPF_F";
 		vehicleclass = "Ship";
-		crew = "O_crew_F";
+		//crew = "O_crew_F";
 		hideProxyInCombat=0;
 		getInRadius=0;
 		class Reflectors{};
@@ -491,28 +493,28 @@ class CfgVehicles
 
 	class ff_roadway : forward_roadway
 	{
-		model="\ulyanovsk\ff_roadway.p3d";
+		model="\ulyanovsk\models\ff_roadway.p3d";
 	};
 
 	class midlle_rooad : forward_roadway
 	{
-		model="\ulyanovsk\midlle_rooad.p3d";
+		model="\ulyanovsk\models\midlle_rooad.p3d";
 	};
 
 	class back_roadway : forward_roadway
 	{
-		model="\ulyanovsk\back_roadway.p3d";
+		model="\ulyanovsk\models\back_roadway.p3d";
 	};
 
 	class bb_roadway : forward_roadway
 	{
-		model="\ulyanovsk\bb_roadway.p3d";
+		model="\ulyanovsk\models\bb_roadway.p3d";
 	};
 
 	class catapult1 : Ship
 	{
 		scope=1;
-		model="\ulyanovsk\catapult.p3d";
+		model="\ulyanovsk\models\catapult.p3d";
 		displayname="";
 		side=0;
 		faction = "OPF_F";
@@ -540,7 +542,7 @@ class CfgVehicles
 	class catapult2 : Ship
 	{
 		scope=1;
-		model="\ulyanovsk\catapult.p3d";
+		model="\ulyanovsk\models\catapult.p3d";
 		displayname="";
 		side=0;
 		faction = "OPF_F";
@@ -568,7 +570,7 @@ class CfgVehicles
 	class catapult3 : Ship
 	{
 		scope=1;
-		model="\ulyanovsk\catapult.p3d";
+		model="\ulyanovsk\models\catapult.p3d";
 		displayname="";
 		side=0;
 		faction = "OPF_F";
@@ -596,7 +598,7 @@ class CfgVehicles
 	class catapult4 : Ship
 	{
 		scope=1;
-		model="\ulyanovsk\catapult.p3d";
+		model="\ulyanovsk\models\catapult.p3d";
 		displayname="";
 		side=0;
 		faction = "OPF_F";
@@ -646,7 +648,7 @@ class CfgVehicles
 		maxSpeed=500;
 		fuelCapacity=0;
 		transportSoldier=0;
-		model="\ulyanovsk\rocket_turret";
+		model="\ulyanovsk\models\rocket_turret";
 		cost=150000;
 		weapons[]={};
 		magazines[]={};

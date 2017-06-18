@@ -6,7 +6,7 @@ _flanim = 0;
 
 [_plane] execVM "\ulyanovsk\scr\catapults_init.sqf";
 
-//_Drop3d = "\lun903\WaterEffects";
+_Drop3d = "\ulyanovsk\WaterEffects";
 _Typeof3d = "Billboard";
 _TimerPeriod = 4;
 _LifeTime = 4;

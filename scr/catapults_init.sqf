@@ -1,5 +1,5 @@
 
-private ["_vehicle","_midll","_fwrw1_position","_midll_position","_fwrw2_position","_bkrw1_position","_bkrw2_position","_fwrw1","_fwrw2","_bkrw1","_bkrw2","_vmfFlag","_trt1","_trt2","_trt3","_trt4","_trt5","_trt6","_trt7","_trt8"];
+private ["_cpult1","_cpult2","_cpult3","_cpult4","_vehicle","_midll","_fwrw1_position","_midll_position","_fwrw2_position","_bkrw1_position","_bkrw2_position","_fwrw1","_fwrw2","_bkrw1","_bkrw2","_vmfFlag","_trt1","_trt2","_trt3","_trt4","_trt5","_trt6","_trt7","_trt8"];
 
 _vehicle = _this select 0;
 
@@ -24,18 +24,15 @@ _midll = "midlle_rooad" createVehicle _midll_position;
   _bkrw2 attachTo [_vehicle,[0.0,0.0,0.0],"broadway2"];
   _midll attachTo [_vehicle,[0.0,0.0,0.0],"mroadway"];
 
-  /*
-  cpult1 = "catapult1" createvehicle(_plane selectionposition "catapult1");
-  cpult2 = "catapult2" createvehicle(_plane selectionposition "catapult2");
-  cpult3 = "catapult3" createvehicle(_plane selectionposition "catapult3");
-  cpult4 = "catapult4" createvehicle(_plane selectionposition "catapult4");
-  */
-  /*
-  cpult1 attachTo [_plane,[0.0,0.0,0.0],"catapult1"];
-  cpult2 attachTo [_plane,[0.0,0.0,0.0],"catapult2"];
-  cpult3 attachTo [_plane,[0.0,0.0,0.0],"catapult3"];
-  cpult4 attachTo [_plane,[0.0,0.0,0.0],"catapult4"];
-  */
+  _cpult1 = "catapult1" createVehicle(_vehicle selectionPosition "catapult1");
+  _cpult2 = "catapult2" createVehicle(_vehicle selectionPosition "catapult2");
+  _cpult3 = "catapult3" createVehicle(_vehicle selectionPosition "catapult3");
+  _cpult4 = "catapult4" createVehicle(_vehicle selectionPosition "catapult4");
+
+  _cpult1 attachTo [_vehicle,[0.0,0.0,0.0],"catapult1"];
+  _cpult2 attachTo [_vehicle,[0.0,0.0,0.0],"catapult2"];
+  _cpult3 attachTo [_vehicle,[0.0,0.0,0.0],"catapult3"];
+  _cpult4 attachTo [_vehicle,[0.0,0.0,0.0],"catapult4"];
 
   _trt1 = "granit_turret1" createVehicle(_vehicle selectionPosition "turret1");
   _trt2 = "granit_turret2" createVehicle(_vehicle selectionPosition "turret2");
